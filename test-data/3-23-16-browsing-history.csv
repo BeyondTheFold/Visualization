@@ -1,5 +1,0 @@
-index,url,sessionStart,sessionDuration,parent,children,withinParentDomain
-0,https://www.reddit.com/,2016-03-24T23:04:47.013Z,1914,,,false
-1,https://www.reddit.com/,2016-03-24T23:06:29.549Z,13377,,,false
-2,https://www.reddit.com/r/programming,2016-03-24T23:06:41.633Z,3852,1,,false
-3,https://www.reddit.com/r/programming/comments/4bqj7q/left_pad_as_a_service/,2016-03-24T23:06:45.485Z,0,2,,true

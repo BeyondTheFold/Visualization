@@ -1,3 +1,6 @@
 [submodule "js/test/vanillaHttpClient"]
 	path = js/vanillaHttpClient
 	url = git@github.com:drewgun/vanillaHttpClient.git
+[submodule "js/processing-js"]
+	path = js/processing-js
+	url = https://github.com/processing-js/processing-js.git
