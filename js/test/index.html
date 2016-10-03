@@ -2,7 +2,14 @@
 <script src="../visualization.js"></script>
 <script src="../tree.js"></script>
 <script src="../slice.js"></script>
+<script src="../node.js"></script>
 <script>
+    function assert(condition, message) {
+        if(!condition) {
+            throw message || "Assertion failed.";
+        }
+    }
+
 	// Get canvas DOM element.
 	canvasElement = document.getElementById('visualization');
 
@@ -11,6 +18,22 @@
 
 	// Retrieve test data.
 	httpClient.get('../test-data/test_data_7.json', beyondTheFold.handleDataResponse)
+
+    function testCreateNode() {
+        var node = new Node(0, 0);
+        var test = node.coordinates[0] === 0 && node.coordinates[1] === 0;
+        assert(test, 'Create node test failed.');
+    }
+
+    function testCalculateNodeDistance() {
+        var nodeOne = new Node(0, 0);
+        var nodeTwo = new Node(0, 1);
+        var distance = calculateDistance(nodeOne, nodeTwo);
+        assert(distance === 1, 'Node distance calculation test failed');
+    }
+
+    testCreateNode();
+    testCalculateNodeDistance()
 </script>
 
 <canvas id="visualization">
